@@ -1,0 +1,7 @@
+step,samples,participants
+samples in metadata (after data-type filter),1638,130
+samples with a species-level profile,1289,105
+samples with non-zero abundance over the species panel,1277,105
+"with complete covariates (Age, Antibiotics, Site)",1277,105
+with all 21 food items,1199,105
+FINAL analysis set,1199,105

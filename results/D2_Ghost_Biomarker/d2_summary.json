@@ -1,0 +1,23 @@
+{
+  "spec": "adj_habitual_3",
+  "diet_terms": 6,
+  "tests": 248,
+  "naive_q05": 5,
+  "adj_q05": 0,
+  "persistent": 0,
+  "attenuated": 0,
+  "lost_effect_intact": 5,
+  "ghost": 0,
+  "emergent": 0,
+  "naive_q25": 39,
+  "adj_q25": 37,
+  "median_atten_among_naive_hits": 2.2957300920104617,
+  "median_atten_all": 2.76107173862819,
+  "sign_flips_among_hits": 0,
+  "coef_corr": 0.9648765018109826,
+  "class_counts": {
+    "Not significant": 243,
+    "Lost FDR, effect intact": 5
+  },
+  "engine": "python"
+}

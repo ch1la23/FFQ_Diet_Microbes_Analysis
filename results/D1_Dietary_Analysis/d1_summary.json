@@ -1,0 +1,68 @@
+{
+  "n_participants": 105,
+  "n_by_group": {
+    "CD": 49,
+    "UC": 30,
+    "nonIBD": 26
+  },
+  "food_tests": 21,
+  "food_p_lt_0_05": 1,
+  "food_q_lt_0_05": 0,
+  "smallest_food_p": [
+    "Probiotic",
+    0.0318743575877914
+  ],
+  "smallest_food_q": 0.3809183775762655,
+  "pairs_total": 210,
+  "pairs_q05_all": 65,
+  "pairs_q05_CD": 10,
+  "pairs_q05_UC": 19,
+  "pairs_q05_nonIBD": 1,
+  "diff_tests": 630,
+  "diff_q05": 0,
+  "diff_min_q": 0.9895052473763118,
+  "top_pair": [
+    "Starch",
+    "Sweets",
+    0.6650686695704314,
+    2.1268078736799872e-12
+  ],
+  "silhouette": {
+    "2": 0.1296733208471835,
+    "3": 0.11301440790239323,
+    "4": 0.09964452060969975,
+    "5": 0.10725525652571495,
+    "6": 0.08043609296414272
+  },
+  "k_best_by_silhouette": 2,
+  "k_used": 3,
+  "cluster_sizes": {
+    "1": 25,
+    "2": 31,
+    "3": 49
+  },
+  "cluster_vs_diagnosis_chi2": 5.304231094777506,
+  "cluster_vs_diagnosis_p_chi2": 0.257481103593394,
+  "cluster_vs_diagnosis_p_mc": 0.26614677064587083,
+  "cramers_v": 0.15892842196556384,
+  "bootstrap_ari_mean": 0.5139031678975485,
+  "ari_small_set_vs_full": 0.24221867969112143,
+  "p_small_set_cluster_vs_diagnosis": 0.5459782530118442,
+  "cluster_top_foods": {
+    "1": [
+      "Fruits (-1.15 SD)",
+      "Vegetables (-1.01 SD)",
+      "Water (-0.88 SD)"
+    ],
+    "2": [
+      "Tea/coffee (no sugar) (+1.16 SD)",
+      "Alcohol (+0.92 SD)",
+      "Fish (+0.90 SD)"
+    ],
+    "3": [
+      "Fruit Juice (+0.55 SD)",
+      "Tea/coffee (no sugar) (-0.47 SD)",
+      "Dairy (+0.43 SD)"
+    ]
+  }
+}

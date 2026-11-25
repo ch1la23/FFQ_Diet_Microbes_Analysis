@@ -1,0 +1,60 @@
+{
+  "tests": 5208,
+  "q05_global": 8,
+  "q25_global": 103,
+  "q05_between_family": 8,
+  "q05_within_family": 2,
+  "family_size": 2604,
+  "ibd_enriched_taxa": 20,
+  "ibd_depleted_taxa": 13,
+  "proposal_foods": {
+    "Whole_Grains": {
+      "q25": 3,
+      "q05": 1,
+      "p05": 22,
+      "rank": 5
+    },
+    "Beans": {
+      "q25": 6,
+      "q05": 0,
+      "p05": 16,
+      "rank": 11
+    },
+    "Vegetables": {
+      "q25": 12,
+      "q05": 0,
+      "p05": 42,
+      "rank": 8
+    }
+  },
+  "shannon_q05": 0,
+  "shannon_p05": 5,
+  "shannon_top": {
+    "term": "Whole_Grains_Mean",
+    "coef": 0.14557564152675836,
+    "pval": 0.001802461398761072,
+    "q": 0.07570337874796502
+  },
+  "shannon_diag_coef": {
+    "diagnosis_CD": [
+      -0.11712123628397948,
+      0.20813058336296605
+    ],
+    "diagnosis_UC": [
+      -0.08931352577778232,
+      0.34098742028885737
+    ]
+  },
+  "cal_samples": 209,
+  "cal_participants": 60,
+  "cal_n_CD": 127,
+  "cal_n_UC": 82,
+  "cal_food_tests": 42,
+  "cal_food_q05": 1,
+  "cal_food_p05": 10,
+  "cal_food_min_q": 0.014192772193282396,
+  "cal_taxa_tests": 124,
+  "cal_taxa_q05": 1,
+  "cal_taxa_p05": 10,
+  "cal_taxa_min_q": 0.0270311718980894
+}

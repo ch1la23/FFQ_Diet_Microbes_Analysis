@@ -1,0 +1,221 @@
+{
+  "engine": "python",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "openpyxl": "3.1.5"
+  },
+  "seed": 42,
+  "input_files_sha256": {
+    "hmp2_metadata_2018-08-20.csv": "656b7bd97660ddb875548805e30bede31f2d1208293f7170d2d5755e33862ec9",
+    "species_abundance_processed.csv": "e1e09e6992703257e489b0f6f70d37b9391163397978528178fe7bd92d69e51b"
+  },
+  "config_sha256": "0093f2ae26ffa2475bb31616a38e438088686895f10407b2dcc34c768f6be304",
+  "foods": [
+    "Fruits",
+    "Vegetables",
+    "Beans",
+    "Whole_Grains",
+    "Starch",
+    "Red_Meat",
+    "Sweets",
+    "Sugary_Drinks",
+    "Processed_Meat",
+    "White_Meat",
+    "Dairy",
+    "Eggs",
+    "Fish",
+    "Diet_Drinks",
+    "Fruit_Juice",
+    "Water",
+    "Alcohol",
+    "Yogurt_Cultures",
+    "Probiotic",
+    "Shellfish",
+    "Tea_Coffee_NoSugar"
+  ],
+  "model_foods": [
+    "Whole_Grains",
+    "Red_Meat",
+    "Sugary_Drinks"
+  ],
+  "ffq_scores": {
+    "No, I did not consume these products in the last 7 days": 0,
+    "Within the past 4 to 7 days": 1,
+    "Within the past 2 to 3 days": 2,
+    "Yesterday, 1 to 2 times": 3,
+    "Yesterday, 3 or more times": 4
+  },
+  "models": [
+    "naive",
+    "adj_visit_3",
+    "adj_habitual_3",
+    "adj_habitual_3_pb",
+    "adj_habitual_21"
+  ],
+  "timings_s": {
+    "00": 1.2,
+    "01": 1.1,
+    "02": 38.8,
+    "03": 3.7,
+    "04": 1.2,
+    "05": 2.6
+  },
+  "d1": {
+    "n_participants": 105,
+    "n_by_group": {
+      "CD": 49,
+      "UC": 30,
+      "nonIBD": 26
+    },
+    "food_tests": 21,
+    "food_p_lt_0_05": 1,
+    "food_q_lt_0_05": 0,
+    "smallest_food_p": [
+      "Probiotic",
+      0.0318743575877914
+    ],
+    "smallest_food_q": 0.3809183775762655,
+    "pairs_total": 210,
+    "pairs_q05_all": 65,
+    "pairs_q05_CD": 10,
+    "pairs_q05_UC": 19,
+    "pairs_q05_nonIBD": 1,
+    "diff_tests": 630,
+    "diff_q05": 0,
+    "diff_min_q": 0.9895052473763118,
+    "top_pair": [
+      "Starch",
+      "Sweets",
+      0.6650686695704314,
+      2.1268078736799872e-12
+    ],
+    "silhouette": {
+      "2": 0.1296733208471835,
+      "3": 0.11301440790239323,
+      "4": 0.09964452060969975,
+      "5": 0.10725525652571495,
+      "6": 0.08043609296414272
+    },
+    "k_best_by_silhouette": 2,
+    "k_used": 3,
+    "cluster_sizes": {
+      "1": 25,
+      "2": 31,
+      "3": 49
+    },
+    "cluster_vs_diagnosis_chi2": 5.304231094777506,
+    "cluster_vs_diagnosis_p_chi2": 0.257481103593394,
+    "cluster_vs_diagnosis_p_mc": 0.26614677064587083,
+    "cramers_v": 0.15892842196556384,
+    "bootstrap_ari_mean": 0.5139031678975485,
+    "ari_small_set_vs_full": 0.24221867969112143,
+    "p_small_set_cluster_vs_diagnosis": 0.5459782530118442,
+    "cluster_top_foods": {
+      "1": [
+        "Fruits (-1.15 SD)",
+        "Vegetables (-1.01 SD)",
+        "Water (-0.88 SD)"
+      ],
+      "2": [
+        "Tea/coffee (no sugar) (+1.16 SD)",
+        "Alcohol (+0.92 SD)",
+        "Fish (+0.90 SD)"
+      ],
+      "3": [
+        "Fruit Juice (+0.55 SD)",
+        "Tea/coffee (no sugar) (-0.47 SD)",
+        "Dairy (+0.43 SD)"
+      ]
+    }
+  },
+  "d2": {
+    "spec": "adj_habitual_3",
+    "diet_terms": 6,
+    "tests": 248,
+    "naive_q05": 5,
+    "adj_q05": 0,
+    "persistent": 0,
+    "attenuated": 0,
+    "lost_effect_intact": 5,
+    "ghost": 0,
+    "emergent": 0,
+    "naive_q25": 39,
+    "adj_q25": 37,
+    "median_atten_among_naive_hits": 2.2957300920104617,
+    "median_atten_all": 2.76107173862819,
+    "sign_flips_among_hits": 0,
+    "coef_corr": 0.9648765018109826,
+    "class_counts": {
+      "Not significant": 243,
+      "Lost FDR, effect intact": 5
+    },
+    "engine": "python"
+  },
+  "d3": {
+    "tests": 5208,
+    "q05_global": 8,
+    "q25_global": 103,
+    "q05_between_family": 8,
+    "q05_within_family": 2,
+    "family_size": 2604,
+    "ibd_enriched_taxa": 20,
+    "ibd_depleted_taxa": 13,
+    "proposal_foods": {
+      "Whole_Grains": {
+        "q25": 3,
+        "q05": 1,
+        "p05": 22,
+        "rank": 5
+      },
+      "Beans": {
+        "q25": 6,
+        "q05": 0,
+        "p05": 16,
+        "rank": 11
+      },
+      "Vegetables": {
+        "q25": 12,
+        "q05": 0,
+        "p05": 42,
+        "rank": 8
+      }
+    },
+    "shannon_q05": 0,
+    "shannon_p05": 5,
+    "shannon_top": {
+      "term": "Whole_Grains_Mean",
+      "coef": 0.14557564152675836,
+      "pval": 0.001802461398761072,
+      "q": 0.07570337874796502
+    },
+    "shannon_diag_coef": {
+      "diagnosis_CD": [
+        -0.11712123628397948,
+        0.20813058336296605
+      ],
+      "diagnosis_UC": [
+        -0.08931352577778232,
+        0.34098742028885737
+      ]
+    },
+    "cal_samples": 209,
+    "cal_participants": 60,
+    "cal_n_CD": 127,
+    "cal_n_UC": 82,
+    "cal_food_tests": 42,
+    "cal_food_q05": 1,
+    "cal_food_p05": 10,
+    "cal_food_min_q": 0.014192772193282396,
+    "cal_taxa_tests": 124,
+    "cal_taxa_q05": 1,
+    "cal_taxa_p05": 10,
+    "cal_taxa_min_q": 0.0270311718980894
+  }
+}
